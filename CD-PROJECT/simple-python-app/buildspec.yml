@@ -11,7 +11,7 @@ phases:
       python: 3.11
   pre_build:
     commands:
-      - pip install -r day-13/simple-python-app/requirements.txt
+      - pip install -r Aws-ci-project/CD-PROJECT/simple-python-app/requirements.txt
   build:
     commands:
       - cd Aws-ci-project/CD-PROJECT/simple-python-app
