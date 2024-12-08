@@ -11,7 +11,7 @@ phases:
       python: 3.11
   pre_build:
     commands:
-      - pip install -r CD-PROJECT/simple-python-app/requirements.txt
+      - pip install -r Codebuild-pipeline-demo/simple-python-app/requirements.txt
   build:
     commands:
       - cd CD-PROJECT/simple-python-app
