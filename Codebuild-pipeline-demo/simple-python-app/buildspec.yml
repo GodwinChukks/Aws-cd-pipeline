@@ -14,7 +14,7 @@ phases:
       - pip install -r Codebuild-pipeline-demo/simple-python-app/requirements.txt
   build:
     commands:
-      - cd CD-PROJECT/simple-python-app
+      - cd codebuild-pipeline-demo/simple-python-app
       - echo "Building Docker image..."
       - echo "$DOCKER_REGISTRY_PASSWORD" | docker login -u "$DOCKER_REGISTRY_USERNAME" --password-stdin "$DOCKER_REGISTRY_URL"
       - docker build -t "$DOCKER_REGISTRY_URL/$DOCKER_REGISTRY_USERNAME/simple-python-flask-app:latest" .
